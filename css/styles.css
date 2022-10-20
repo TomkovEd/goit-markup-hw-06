@@ -715,3 +715,6 @@ body {
 .close-icon {
   fill: #000000;
 }
+
+
+.textarea{resize: none;}
