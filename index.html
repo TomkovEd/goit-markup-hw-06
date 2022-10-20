@@ -402,23 +402,38 @@
             <use href="./photo/symbol-defs.svg#icon-close-black"></use>
           </svg>
         </button>
-        <form>
-          <label for="name">name</label>
-          <input type="text" name="name" id="name">
+        <form class="form">
+          <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <div class="form-field">
+            <label for="name">Ім'я</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" />
+          </div>
+          <div class="form-field">
+            <label for="mail">Пошта</label>
+            <input type="email" name="mail" id="mail" />
+          </div>
+          <div class="form-field">
+            <label for="coment">Коментар</label>
+            <textarea
+              name="coment"
+              id="coment"
+              cols="30"
+              rows="5"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+          <div class="form-checkbox">
+            <input type="checkbox" name="agree" id="agree" />
+            <label for="agree"
+              >Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+            </label>
+          </div>
 
-          <label for="tel">tel</label>
-          <input type="tel" name="tel" id="tel">
-
-          <label for="mail">mail</label>
-          <input type="email" name="mail" id="mail">
-
-          <label for="coment">coment</label>
-          <textarea name="coment" id="coment" cols="30" rows="5" autofocus></textarea>
-
-          <input type="checkbox" name="agree" id="agree">
-          <label for="agree">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a> </label>
-
-          <button type="submit">Відправити</button>
+          <button type="submit" class="form-button">Відправити</button>
         </form>
       </div>
     </div>
