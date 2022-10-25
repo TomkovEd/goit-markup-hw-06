@@ -516,9 +516,6 @@ body {
   align-items: baseline;
   justify-content: space-between;
 }
-.social {
-  margin-left: 70px;
-}
 
 .social-title {
   margin-bottom: 20px;
@@ -583,6 +580,9 @@ body {
   background-color: var(--buttom-colour);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+.send-icon {
+  fill: var(--contacts-footer-colour);
 }
 
 .footer-mb {
