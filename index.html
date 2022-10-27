@@ -419,22 +419,35 @@
           <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
           <div class="form-field">
             <label for="name">Ім'я</label>
-            <input type="text" name="name" id="name" />
-            <svg class="form-image" height="18" width="18">
-              <use href="./photo/symbol-defs.svg#icon-person-black"></use>
-            </svg>
+            <div class="form-picture">
+              <input class="form-input" type="text" name="name" id="name" />
+              <svg class="form-image" height="18" width="18">
+                <use href="./photo/symbol-defs.svg#icon-person-black"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-field">
             <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" />
+            <div class="form-picture">
+              <input class="form-input" type="tel" name="tel" id="tel" />
+              <svg class="form-image" height="18" width="18">
+                <use href="./photo/symbol-defs.svg#icon-phone-black"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-field">
             <label for="mail">Пошта</label>
-            <input type="email" name="mail" id="mail" />
+            <div class="form-picture">
+              <input class="form-input" type="email" name="mail" id="mail" />
+              <svg class="form-image" height="18" width="18">
+                <use href="./photo/symbol-defs.svg#icon-email-black"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-field">
             <label for="coment">Коментар</label>
             <textarea
+              class="form-input"
               name="coment"
               id="coment"
               cols="30"
@@ -442,12 +455,11 @@
               placeholder="Введіть текст"
             ></textarea>
           </div>
-          <div class="form-checkbox">
-            <input type="checkbox" name="agree" id="agree" />
-            <label for="agree"
-              >Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
-            </label>
-          </div>
+          <label class="checkbox-label">
+            <input class="checkbox" type="checkbox" name="agree" />
+            <span class="checkbox-area"> </span>
+            Погоджуюся з розсилкою та приймаю <a href="" class="label-link">Умови договору</a>
+          </label>
 
           <button type="submit" class="form-button">Відправити</button>
         </form>
