@@ -755,6 +755,7 @@ body {
 
 .close-icon {
   fill: #000000;
+  transition: fill var(--timeing-funktion);
 }
 
 .modal-close-button:hover .close-icon,
@@ -788,6 +789,8 @@ body {
   top: 11px;
   left: 12px;
   transform: translateY(-50%, 50%);
+  fill: currentColor;
+  transition: fill var(--timeing-funktion);
 }
 .form-field label {
   margin-bottom: 4px;
@@ -810,6 +813,7 @@ body {
   height: 40px;
   border: 1px solid #21212133;
   border-radius: 4px;
+  transition: border var(--timeing-funktion);
 }
 
 .form-field textarea {
