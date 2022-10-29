@@ -470,8 +470,8 @@ body {
 
 .client-link:hover,
 .client-link:focus {
-  border: 1px solid var(--accent-colour);
-  color: var(--accent-colour);
+  border: 1px solid var(--buttom-colour);
+  color: var(--buttom-colour);
 }
 
 /*----------FOOTER------------*/
@@ -514,9 +514,10 @@ body {
 .footer-n {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
 }
-
+.social {
+  margin-left: 70px;
+}
 .social-title {
   margin-bottom: 20px;
   font-weight: 700;
@@ -548,7 +549,9 @@ body {
 .social-link:focus {
   background-color: var(--accent-colour);
 }
-
+.footer-form {
+  margin-left: auto;
+}
 .footer-form-title {
   margin-bottom: 20px;
   font-weight: 700;
@@ -562,8 +565,10 @@ body {
   margin-right: 12px;
   width: 358px;
   height: 50px;
+  outline: transparent;
   background-color: #2196f300;
   border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-btn {
   display: flex;
@@ -732,20 +737,22 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 8px;
+  padding: 40px;
 
-  min-height: 581px;
-  min-width: 528px;
+  height: 581px;
+  width: 528px;
   background-color: var(--bot-logo-colour);
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--timeing-funktion);
 }
 
 .modal-close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -764,8 +771,6 @@ body {
 }
 
 .form {
-  margin-left: 40px;
-  margin-right: 40px;
 }
 .form-title {
   margin-bottom: 12px;
@@ -778,6 +783,10 @@ body {
 .form-field {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-coment {
+  margin-bottom: 20px;
 }
 .form-picture {
   height: 40px;
@@ -786,9 +795,9 @@ body {
 }
 .form-image {
   position: absolute;
-  top: 11px;
+  top: 50%;
   left: 12px;
-  transform: translateY(-50%, 50%);
+  transform: translateY(-50%);
   fill: currentColor;
   transition: fill var(--timeing-funktion);
 }
@@ -808,9 +817,9 @@ body {
 }
 .form-field input {
   padding-left: 42px;
-  margin-bottom: 10px;
-  width: 448px;
+  width: 100%;
   height: 40px;
+  outline: transparent;
   border: 1px solid #21212133;
   border-radius: 4px;
   transition: border var(--timeing-funktion);
@@ -818,11 +827,12 @@ body {
 
 .form-field textarea {
   padding: 12px 16px;
-  margin-bottom: 20px;
   height: 120px;
+  outline: transparent;
   border: 1px solid #21212133;
   border-radius: 4px;
   resize: none;
+  transition: border var(--timeing-funktion);
 }
 
 .form-field textarea[placeholder] {
@@ -831,15 +841,33 @@ body {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+.textarea:focus {
+  border: 1px solid var(--accent-colour);
+}
 
 .checkbox-area {
+  display: inline-block;
+  margin-right: 8.5px;
+  width: 16px;
+  height: 15px;
+  overflow: hidden;
+  border-radius: 0.05em;
+  background-color: white;
+  background-image: url(/photo/icon-check-white.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  box-shadow: 0 0 0 0.1em var(--title-colour);
+  transition: background-color var(--timeing-funktion), box-shadow var(--timeing-funktion);
+}
+/* .checkbox-area {
   display: inline-block;
   margin-right: 7px;
   width: 16px;
   height: 15px;
   border-radius: 2px;
   border: 2px solid var(--title-colour);
-}
+} */
 .checkbox {
   -webkit-appearance: none;
 }
@@ -848,14 +876,24 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-colour);
+}
+.label-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--buttom-colour);
 }
 .checkbox:checked + .checkbox-area {
-  background-image: url(/photo/icon\ check.svg);
-  background-size: contain;
-  margin-right: 7px;
-  border-radius: 2px;
   background-origin: border-box;
-  border-color: var(--accent-colour);
+  box-shadow: 0 0 0 0.1em var(--buttom-colour);
+  background-color: var(--buttom-colour);
 }
 .form-checkbox label {
   margin-left: 7px;
