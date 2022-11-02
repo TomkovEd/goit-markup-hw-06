@@ -465,7 +465,7 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border var(--timeing-funktion), color var(--timeing-funktion);
-  color: var(--contacts-header-colour);
+  color: #afb1b8;
 }
 
 .client-link:hover,
@@ -853,7 +853,7 @@ body {
   overflow: hidden;
   border-radius: 0.05em;
   background-color: white;
-  background-image: url(/photo/icon-check-white.svg);
+  /* background-image: url(/photo/icon-check-white.svg); */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -891,6 +891,7 @@ body {
   color: var(--buttom-colour);
 }
 .checkbox:checked + .checkbox-area {
+  background-image: url(/photo/icon-check-white.svg);
   background-origin: border-box;
   box-shadow: 0 0 0 0.1em var(--buttom-colour);
   background-color: var(--buttom-colour);
